@@ -11,5 +11,11 @@ describe('StringCalculator', () => {
     expect(calculator.add('')).toBe(0);
   });
 
-  
+  test('returns the number itself for a single number', () => {
+    expect(calculator.add('1')).toBe(1);
+  });
+
+  test('returns the sum of two numbers', () => {
+    expect(calculator.add('1,5')).toBe(6);
+  });
 });
